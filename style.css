@@ -20,10 +20,10 @@ img{
   --x: red;
   --slide-bg: url(#gradient);
   /* --bg-img: url("./images/portfolio-background.jpg"); */
-  --bg-img: url('images/light-blank-bg.png');
+  --bg-img: url('./images/light-blank-bg.png');
   --resume-shadow: rgb(139, 119, 248);
   /* --mobile-bg: url("./images/background.png"); */
-  --mobile-bg: url("./images/light-blank-bg.png");
+  --mobile-bg: url('./images/light-blank-bg.png');
   /* --primary-color: rgb(255, 251, 42); */
   /* --secondary-color: rgb(255, 87, 95); */
 }
@@ -34,10 +34,10 @@ img{
   --secondary-color: rgb(27, 26, 26);
   --slide-bg: url(#gradient2);
   /* --bg-img: url("./images/cover-blank-removebg-preview.png"); */
-  --bg-img: url("./images/dark-blank-bg.png");
+  --bg-img: url('./images/dark-blank-bg.png');
   --resume-shadow: rgb(22, 0, 143);
   /* --mobile-bg: url("./images/nadine-shaabana-u7PJMJoDYdg-unsplash.jpg") */
-  --mobile-bg: url("./images/dark-blank-bg.png")
+  --mobile-bg: url('./images/dark-blank-bg.png');
 }
 
 /* ======================= Navbar style =============================== */
