@@ -19,11 +19,11 @@ img{
   --footer-color: rgb(146, 146, 255);
   --x: red;
   --slide-bg: url(#gradient);
-  /* --bg-img: url("./Images/portfolio-background.jpg"); */
-  --bg-img: url('Images/light-blank-bg.png');
+  /* --bg-img: url("./images/portfolio-background.jpg"); */
+  --bg-img: url('images/light-blank-bg.png');
   --resume-shadow: rgb(139, 119, 248);
-  /* --mobile-bg: url("./Images/background.png"); */
-  --mobile-bg: url("./Images/light-blank-bg.png");
+  /* --mobile-bg: url("./images/background.png"); */
+  --mobile-bg: url("./images/light-blank-bg.png");
   /* --primary-color: rgb(255, 251, 42); */
   /* --secondary-color: rgb(255, 87, 95); */
 }
@@ -33,17 +33,17 @@ img{
   --primary-color: rgb(88, 55, 146);
   --secondary-color: rgb(27, 26, 26);
   --slide-bg: url(#gradient2);
-  /* --bg-img: url("./Images/cover-blank-removebg-preview.png"); */
-  --bg-img: url("./Images/dark-blank-bg.png");
+  /* --bg-img: url("./images/cover-blank-removebg-preview.png"); */
+  --bg-img: url("./images/dark-blank-bg.png");
   --resume-shadow: rgb(22, 0, 143);
-  /* --mobile-bg: url("./Images/nadine-shaabana-u7PJMJoDYdg-unsplash.jpg") */
-  --mobile-bg: url("./Images/dark-blank-bg.png")
+  /* --mobile-bg: url("./images/nadine-shaabana-u7PJMJoDYdg-unsplash.jpg") */
+  --mobile-bg: url("./images/dark-blank-bg.png")
 }
 
 /* ======================= Navbar style =============================== */
 .navbar {
   position: fixed;
-  /* background: url("../Images/background.png") no-repeat; */
+  /* background: url("../images/background.png") no-repeat; */
   background: var(--mobile-bg) no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -123,7 +123,7 @@ input[type="checkbox"] {
   width: 100%;
   height: 100vh;
   display: flex;
-  /* background: url('../Images/cover-blank.jpg') no-repeat; */
+  /* background: url('../images/cover-blank.jpg') no-repeat; */
   background: var(--bg-img) no-repeat;
   background-size: cover;
   align-items: center;
@@ -244,8 +244,8 @@ input[type="checkbox"] {
   height: 100vh;
   background-color: var(--primary-color);
   position: relative;
-  /* background-image: url("../Images/bg.webp"); */
-  /* background: url('../Images/background-alter.png') no-repeat; */
+  /* background-image: url("../images/bg.webp"); */
+  /* background: url('../images/background-alter.png') no-repeat; */
   /* background-size: cover; */
   color: var(--text-color);
 }

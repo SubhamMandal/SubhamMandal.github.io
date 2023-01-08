@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            flex-direction: column;
-            height: 100vh;
-        }
-        .msg{
-            font-size: 40px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: brown;
-            padding: 30px;
-        }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .msg {
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: brown;
+        padding: 30px;
+      }
+
+      #goBack {
+        background-color: #fff;
+        border: 1px solid #d5d9d9;
+        border-radius: 8px;
+        box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+        box-sizing: border-box;
+        color: #0f1111;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Amazon Ember", sans-serif;
+        font-size: 20px;
+        line-height: 39px;
+        padding: 0 10px 0 11px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        width: 100px;
+      }
+
+      #goBack:hover {
+        background-color: #f7fafa;
+      }
+
+      #goBack:focus {
+        border-color: #008296;
+        box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+        outline: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="msg">Thank you for reaching out</div>
     <div class="msg">Have a wonderful day!</div>
-    <div class="msg"><a href="https://anupama-paul.herokuapp.com/">Go back</a></div>
-</body>
+    <button class="msg" id="goBack">Go back</button>
+  </body>
+
+  <script>
+    const backBtn = document.querySelector("#goBack");
+    backBtn.addEventListener("click", goBack);
+    function goBack() {
+      history.back();
+    }
+  </script>
 </html>
