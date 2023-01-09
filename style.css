@@ -443,7 +443,6 @@ input[type="checkbox"] {
     var(--secondary-color)
   );
   position: absolute;
-  /* opacity: 0.3; */
   top: -50px;
   width: 100%;
   height: 100px;
@@ -451,17 +450,15 @@ input[type="checkbox"] {
 
 #skills .title {
   font-size: 50px;
-  /* color: rgb(255, 255, 255); */
   margin-top: 100px;
   padding: 30px 90px;
-  /* background-color: #1DA1F2; */
 }
 
 #skills .skills-box {
+  margin-bottom: 60px;
   align-self: center;
   justify-self: center;
   display: flex;
-  /* background-color: aquamarine; */
   width: 75%;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -605,6 +602,7 @@ input[type="checkbox"] {
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
+
 #contacts::before {
   content: "";
   background-image: linear-gradient(
@@ -1003,4 +1001,45 @@ textarea {
     color: blanchedalmond;
     border-color: blanchedalmond;
   }
+}
+
+
+/* ============================================================================================= */
+/* Tooltip CSS  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.tooltip .tooltiptext {
+  transition: transform 2s;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transform: translateY(-5px);
 }
