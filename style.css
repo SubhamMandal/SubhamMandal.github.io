@@ -117,6 +117,46 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+/* ===================================== Tooltip CSS ============================================== */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.tooltip .tooltiptext {
+  transition: transform 2s;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transform: translateY(-5px);
+}
+
 /* ====================== home page style ============================= */
 #home {
   position: relative;
@@ -1001,45 +1041,4 @@ textarea {
     color: blanchedalmond;
     border-color: blanchedalmond;
   }
-}
-
-
-/* ===================================== Tooltip CSS ============================================== */
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted var(--primary-color);
-}
-
-.tooltip .tooltiptext {
-  transition: transform 2s;
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--primary-color) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  transform: translateY(-5px);
 }
